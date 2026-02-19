@@ -1,0 +1,78 @@
+╔═══════════════════════════════════════════════════════════╗
+║          RAG ASSISTANT - STREAMLIT UI QUICK START        ║
+╚═══════════════════════════════════════════════════════════╝
+
+📦 STEP 1: INSTALL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  pip install -r requirements.txt
+
+
+🔑 STEP 2: SETUP .env FILE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Create .env file with your Azure OpenAI credentials:
+
+  SERVICE_LINE=your_service_line
+  BRAND=your_brand
+  PROJECT=your_project
+  HEADER_API_VERSION=your_header_api_version
+  API_KEY=your_api_key
+  API_VERSION=your_api_version
+  END_POINT=https://your-resource.openai.azure.com/
+  DEPLOYMENT_ID=your_deployment_name
+
+
+🚀 STEP 3: RUN THE APP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  streamlit run streamlit_app.py
+
+
+🎨 STEP 4: USE THE UI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1. 📁 Upload files (PDF/DOCX/TXT) in sidebar
+  2. 🔄 Click "Index Documents"
+  3. 💬 Type your question
+  4. 🔍 Click "Get Answer"
+  5. ✨ View answer + sources + metadata
+
+
+📂 WHAT GETS CREATED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  uploaded_files/  ← Your uploaded documents saved here
+  chroma_db/       ← Vector database (auto-created)
+
+
+🎯 UI FEATURES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ✅ Drag & drop file upload
+  ✅ Real-time indexing status
+  ✅ Question input box
+  ✅ Answer display box (green)
+  ✅ Metadata/sources box (blue)
+  ✅ Chat history (expandable)
+  ✅ Clear all files button
+
+
+⚡ WORKFLOW
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Upload → Save → Index → Ask → Retrieve → Rerank → Answer
+
+
+🔧 TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  • Module not found?     → pip install -r requirements.txt
+  • Slow first run?       → Normal (downloading models)
+  • No answer?            → Try clearer questions or upload more docs
+  • Want to reset?        → Click "Clear All Files" button
+
+
+💡 TIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  → Upload well-formatted documents for better extraction
+  → Be specific in your questions
+  → Check the sources box to verify citations
+  → Re-index after uploading new files
+
+
+╔═══════════════════════════════════════════════════════════╗
+║                    ENJOY YOUR RAG APP! 🚀                 ║
+╚═══════════════════════════════════════════════════════════╝
