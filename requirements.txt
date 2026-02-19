@@ -1,28 +1,28 @@
-streamlit==1.32.2
+streamlit
 
-# --- Core LangChain ---
-langchain==0.1.20
-langchain-core==0.1.52
-langchain-community==0.0.38
-langchain-openai==0.1.7
-langchain-huggingface==0.0.3
-langchain-chroma==0.1.2
-langchain-text-splitters==0.0.1
+# --- LangChain Modular Stack (latest stable architecture) ---
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-huggingface
+langchain-chroma
+langchain-text-splitters
 
-# --- Vector Store ---
-chromadb==0.4.24
-faiss-cpu==1.7.4
+# --- Vector DB ---
+chromadb
+faiss-cpu
 
-# --- Embeddings / Transformers ---
-sentence-transformers==2.6.1
-transformers==4.39.3
-torch==2.2.1
+# --- Embeddings ---
+sentence-transformers
+transformers
+torch
 
-# --- File Handling ---
-pypdf==4.2.0
-python-docx==1.1.0
+# --- File Support ---
+pypdf
+python-docx
 
 # --- Utilities ---
-python-dotenv==1.0.1
-openai==1.23.2
-tiktoken==0.6.0
+python-dotenv
+openai
+tiktoken
