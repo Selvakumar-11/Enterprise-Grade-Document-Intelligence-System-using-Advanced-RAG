@@ -10,3 +10,5 @@ faiss-cpu
 pypdf
 python-dotenv
 openai
+python-docx
+
